@@ -1,0 +1,344 @@
+{
+  "generatedAt": "2026-04-21T22:02:56",
+  "source": {
+    "kind": "Google Sheets",
+    "sheetId": "1K61wH_vljKQC2or7jk-53fZCURFV8_D3ZfLmhV_EZYY",
+    "gid": "0",
+    "csvUrl": "https://docs.google.com/spreadsheets/d/1K61wH_vljKQC2or7jk-53fZCURFV8_D3ZfLmhV_EZYY/gviz/tq?tqx=out:csv&gid=0",
+    "baseDate": "2026-01-01"
+  },
+  "totals": {
+    "eleitores": 555711,
+    "biometria": 527829,
+    "deficiencia": 6583,
+    "nomeSocial": 147,
+    "municipios": 16,
+    "zonas": 11,
+    "secoes": 710,
+    "locais": 115
+  },
+  "charts": {
+    "cidade": {
+      "labels": [
+        "MACAP\u00c1",
+        "SANTANA",
+        "LARANJAL DO JARI",
+        "OIAPOQUE",
+        "MAZAG\u00c3O",
+        "PORTO GRANDE",
+        "TARTARUGALZINHO",
+        "VIT\u00d3RIA DO JARI",
+        "PEDRA BRANCA DO AMAPARI",
+        "ITAUBAL",
+        "CAL\u00c7OENE",
+        "FERREIRA GOMES",
+        "AMAP\u00c1",
+        "CUTIAS",
+        "SERRA DO NAVIO",
+        "PRACU\u00daBA"
+      ],
+      "values": [
+        303670,
+        82836,
+        27855,
+        23207,
+        21955,
+        15268,
+        11290,
+        10304,
+        10267,
+        9387,
+        8827,
+        8100,
+        7551,
+        6644,
+        4337,
+        4213
+      ]
+    },
+    "genero": {
+      "labels": [
+        "FEMININO",
+        "MASCULINO",
+        "N\u00c3O INFORMADO"
+      ],
+      "values": [
+        285701,
+        270009,
+        1
+      ]
+    },
+    "faixaEtaria": {
+      "labels": [
+        "25 a 29 anos",
+        "30 a 34 anos",
+        "35 a 39 anos",
+        "40 a 44 anos",
+        "21 a 24 anos",
+        "45 a 49 anos",
+        "50 a 54 anos",
+        "55 a 59 anos",
+        "60 a 64 anos",
+        "65 a 69 anos",
+        "70 a 74 anos",
+        "20 anos",
+        "19 anos",
+        "18 anos",
+        "75 a 79 anos",
+        "17 anos",
+        "80 a 84 anos",
+        "85 a 89 anos",
+        "16 anos",
+        "90 a 94 anos",
+        "95 a 99 anos",
+        "15 anos",
+        "100 anos ou mais",
+        "Inv\u00e1lida"
+      ],
+      "values": [
+        69903,
+        64190,
+        60449,
+        58794,
+        52235,
+        50997,
+        42590,
+        34337,
+        26428,
+        19800,
+        14260,
+        12628,
+        12073,
+        9477,
+        9206,
+        5868,
+        5818,
+        3070,
+        1615,
+        1183,
+        382,
+        256,
+        151,
+        1
+      ]
+    },
+    "instrucao": {
+      "labels": [
+        "ENSINO M\u00c9DIO COMPLETO",
+        "ENSINO M\u00c9DIO INCOMPLETO",
+        "ENSINO FUNDAMENTAL INCOMPLETO",
+        "SUPERIOR COMPLETO",
+        "SUPERIOR INCOMPLETO",
+        "ENSINO FUNDAMENTAL COMPLETO",
+        "L\u00ca E ESCREVE",
+        "ANALFABETO"
+      ],
+      "values": [
+        157783,
+        117671,
+        111849,
+        56483,
+        38865,
+        29418,
+        25313,
+        18329
+      ]
+    },
+    "corRaca": {
+      "labels": [
+        "N\u00c3O INFORMADO",
+        "Parda",
+        "Branca",
+        "Preta",
+        "Ind\u00edgena",
+        "Amarela"
+      ],
+      "values": [
+        415026,
+        101779,
+        18581,
+        16488,
+        3192,
+        645
+      ]
+    },
+    "estadoCivil": {
+      "labels": [
+        "SOLTEIRO",
+        "CASADO",
+        "DIVORCIADO",
+        "VI\u00daVO",
+        "SEPARADO JUDICIALMENTE"
+      ],
+      "values": [
+        441397,
+        93909,
+        9609,
+        7789,
+        3007
+      ]
+    }
+  },
+  "municipios": [
+    {
+      "NM_MUNICIPIO": "MACAP\u00c1",
+      "eleitores": 303670,
+      "biometria": 286501,
+      "deficiencia": 3678,
+      "nomeSocial": 106,
+      "zonas": 3,
+      "secoes": 701,
+      "locais": 114
+    },
+    {
+      "NM_MUNICIPIO": "SANTANA",
+      "eleitores": 82836,
+      "biometria": 77528,
+      "deficiencia": 833,
+      "nomeSocial": 19,
+      "zonas": 1,
+      "secoes": 278,
+      "locais": 41
+    },
+    {
+      "NM_MUNICIPIO": "LARANJAL DO JARI",
+      "eleitores": 27855,
+      "biometria": 27268,
+      "deficiencia": 229,
+      "nomeSocial": 1,
+      "zonas": 1,
+      "secoes": 115,
+      "locais": 24
+    },
+    {
+      "NM_MUNICIPIO": "OIAPOQUE",
+      "eleitores": 23207,
+      "biometria": 22037,
+      "deficiencia": 386,
+      "nomeSocial": 1,
+      "zonas": 1,
+      "secoes": 93,
+      "locais": 20
+    },
+    {
+      "NM_MUNICIPIO": "MAZAG\u00c3O",
+      "eleitores": 21955,
+      "biometria": 21330,
+      "deficiencia": 316,
+      "nomeSocial": 3,
+      "zonas": 1,
+      "secoes": 96,
+      "locais": 34
+    },
+    {
+      "NM_MUNICIPIO": "PORTO GRANDE",
+      "eleitores": 15268,
+      "biometria": 14823,
+      "deficiencia": 190,
+      "nomeSocial": 4,
+      "zonas": 1,
+      "secoes": 46,
+      "locais": 12
+    },
+    {
+      "NM_MUNICIPIO": "TARTARUGALZINHO",
+      "eleitores": 11290,
+      "biometria": 10767,
+      "deficiencia": 96,
+      "nomeSocial": 2,
+      "zonas": 1,
+      "secoes": 46,
+      "locais": 22
+    },
+    {
+      "NM_MUNICIPIO": "VIT\u00d3RIA DO JARI",
+      "eleitores": 10304,
+      "biometria": 10200,
+      "deficiencia": 186,
+      "nomeSocial": 0,
+      "zonas": 1,
+      "secoes": 44,
+      "locais": 10
+    },
+    {
+      "NM_MUNICIPIO": "PEDRA BRANCA DO AMAPARI",
+      "eleitores": 10267,
+      "biometria": 9775,
+      "deficiencia": 79,
+      "nomeSocial": 3,
+      "zonas": 1,
+      "secoes": 32,
+      "locais": 7
+    },
+    {
+      "NM_MUNICIPIO": "ITAUBAL",
+      "eleitores": 9387,
+      "biometria": 9091,
+      "deficiencia": 79,
+      "nomeSocial": 1,
+      "zonas": 1,
+      "secoes": 32,
+      "locais": 10
+    },
+    {
+      "NM_MUNICIPIO": "CAL\u00c7OENE",
+      "eleitores": 8827,
+      "biometria": 8511,
+      "deficiencia": 82,
+      "nomeSocial": 3,
+      "zonas": 1,
+      "secoes": 30,
+      "locais": 9
+    },
+    {
+      "NM_MUNICIPIO": "FERREIRA GOMES",
+      "eleitores": 8100,
+      "biometria": 7922,
+      "deficiencia": 123,
+      "nomeSocial": 1,
+      "zonas": 1,
+      "secoes": 26,
+      "locais": 5
+    },
+    {
+      "NM_MUNICIPIO": "AMAP\u00c1",
+      "eleitores": 7551,
+      "biometria": 7367,
+      "deficiencia": 121,
+      "nomeSocial": 0,
+      "zonas": 1,
+      "secoes": 28,
+      "locais": 10
+    },
+    {
+      "NM_MUNICIPIO": "CUTIAS",
+      "eleitores": 6644,
+      "biometria": 6414,
+      "deficiencia": 75,
+      "nomeSocial": 2,
+      "zonas": 1,
+      "secoes": 23,
+      "locais": 6
+    },
+    {
+      "NM_MUNICIPIO": "SERRA DO NAVIO",
+      "eleitores": 4337,
+      "biometria": 4158,
+      "deficiencia": 38,
+      "nomeSocial": 1,
+      "zonas": 1,
+      "secoes": 12,
+      "locais": 3
+    },
+    {
+      "NM_MUNICIPIO": "PRACU\u00daBA",
+      "eleitores": 4213,
+      "biometria": 4137,
+      "deficiencia": 72,
+      "nomeSocial": 0,
+      "zonas": 1,
+      "secoes": 17,
+      "locais": 8
+    }
+  ]
+}
