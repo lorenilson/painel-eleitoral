@@ -61,6 +61,28 @@ h1 {
 
 main { padding: 10px 5vw 40px; }
 
+.filters {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filters label {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.filters select {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  padding: 8px 10px;
+  font-family: 'Barlow', sans-serif;
+  font-size: .95rem;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
