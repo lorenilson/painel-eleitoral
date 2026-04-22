@@ -30,9 +30,25 @@
       <select id="municipioSelect">
         <option value="TODOS">Todos os municipios</option>
       </select>
+      <label for="zonaSelect">Zona:</label>
+      <select id="zonaSelect">
+        <option value="TODAS">Todas</option>
+      </select>
+      <label for="faixaSelect">Faixa etaria:</label>
+      <select id="faixaSelect">
+        <option value="TODAS">Todas</option>
+      </select>
     </section>
 
     <section class="cards" id="summaryCards"></section>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Comparativo de Abas: ELEITORES x ELEITORES POR MUNICIPIO</h2>
+        <canvas id="comparativoAbasChart"></canvas>
+        <p id="comparativoMeta" class="subtitle"></p>
+      </article>
+    </section>
 
     <section class="grid grid-2">
       <article class="panel">
