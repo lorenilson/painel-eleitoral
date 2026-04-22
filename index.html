@@ -3,18 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Painel em Atualizacao</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; display: grid; place-items: center; min-height: 100vh; background: #f4f6f5; color: #1f2a24; }
-    .box { max-width: 680px; padding: 24px; border: 1px solid #d8dedb; background: #fff; border-radius: 10px; }
-    h1 { margin-top: 0; }
-    p { line-height: 1.5; }
-  </style>
+  <title>Painel do Eleitorado - AP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Sora:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <main class="box">
-    <h1>Painel em atualizacao</h1>
-    <p>Os dados anteriores foram removidos e o dashboard sera republicado com a base correta autorizada.</p>
+  <header class="hero">
+    <div>
+      <p class="kicker">Perfil do Eleitorado</p>
+      <h1>Painel Consolidado - Amapa</h1>
+      <p class="subtitle">Base oficial carregada do Google Sheets informado.</p>
+    </div>
+    <div class="hero-meta">
+      <p id="sourceInfo">Fonte: carregando...</p>
+      <p id="generatedAt">Atualizado: carregando...</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="cards" id="summaryCards"></section>
+
+    <section class="grid grid-2">
+      <article class="panel">
+        <h2>Eleitores por Municipio</h2>
+        <canvas id="cidadeChart"></canvas>
+      </article>
+      <article class="panel">
+        <h2>Genero</h2>
+        <canvas id="generoChart"></canvas>
+      </article>
+    </section>
+
+    <section class="grid grid-2">
+      <article class="panel">
+        <h2>Faixa Etaria</h2>
+        <canvas id="faixaChart"></canvas>
+      </article>
+      <article class="panel">
+        <h2>Cor / Raca</h2>
+        <canvas id="racaChart"></canvas>
+      </article>
+    </section>
+
+    <section class="grid grid-2">
+      <article class="panel">
+        <h2>Grau de Instrucao</h2>
+        <canvas id="instrucaoChart"></canvas>
+      </article>
+      <article class="panel">
+        <h2>Estado Civil</h2>
+        <canvas id="estadoCivilChart"></canvas>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Municipios - Resumo Operacional</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Municipio</th>
+                <th>Eleitores</th>
+                <th>Biometria</th>
+                <th>Deficiencia</th>
+                <th>Nome Social</th>
+                <th>Zonas</th>
+                <th>Secoes</th>
+                <th>Locais</th>
+              </tr>
+            </thead>
+            <tbody id="municipiosBody"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
   </main>
 </body>
 </html>
