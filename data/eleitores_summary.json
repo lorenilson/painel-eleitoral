@@ -1,0 +1,209 @@
+{
+  "generatedAt": "2026-04-21T21:50:59",
+  "sourceFile": "AMAPA JOVEM.xlsx",
+  "totals": {
+    "registros": 1718,
+    "cidades": 16,
+    "bairros": 182,
+    "indicacoes": 46,
+    "comEmail": 1445,
+    "comFacebook": 40,
+    "comInstagram": 88
+  },
+  "charts": {
+    "programa": {
+      "labels": [
+        "PAJ - ESCOLA",
+        "PAJ - CAMPO",
+        "PAJ - UNIVERSITARIO",
+        "PAJ - ESTAGIARIO N\u00cdVEL M\u00c9DIO",
+        "PAJ - ESTAGIARIO N\u00cdVEL SUPERIOR",
+        "PAJ - PROTAGONISTA MONITOR N\u00cdVEL 1",
+        "PAJ - PROTAGONISTA MONITOR N\u00cdVEL 2"
+      ],
+      "values": [
+        1140,
+        153,
+        143,
+        103,
+        100,
+        56,
+        23
+      ]
+    },
+    "cidade": {
+      "labels": [
+        "MACAPA",
+        "SANTANA",
+        "LARANJAL DO JARI",
+        "MAZAGAO",
+        "AMAPA",
+        "PORTO GRANDE",
+        "ITAUBAL",
+        "PEDRA BRANCA DO AMAPARI",
+        "SERRA DO NAVIO",
+        "CALCOENE",
+        "OIAPOQUE",
+        "TARTARUGALZINHO",
+        "Outros"
+      ],
+      "values": [
+        883,
+        275,
+        143,
+        137,
+        62,
+        46,
+        42,
+        30,
+        25,
+        19,
+        16,
+        14,
+        26
+      ]
+    },
+    "bairro": {
+      "labels": [
+        "CENTRO",
+        "BURITIZAL",
+        "INFRAERO 2",
+        "MACAPABA",
+        "CONGOS",
+        "NOVO BURITIZAL",
+        "PARAISO",
+        "ITAUBAL",
+        "BEIROL",
+        "SANTA RITA",
+        "FONTE NOVA",
+        "NOVA BRASILIA",
+        "NOVA ESPERANCA",
+        "AGRESTE",
+        "HOSPITALIDADE",
+        "Outros"
+      ],
+      "values": [
+        119,
+        84,
+        84,
+        75,
+        66,
+        56,
+        42,
+        39,
+        37,
+        36,
+        30,
+        29,
+        27,
+        26,
+        25,
+        943
+      ]
+    },
+    "indicacao": {
+      "labels": [
+        "MONICA DIAS",
+        "JORGE AMANAJAS",
+        "RODOLFO VALE",
+        "DUDAO",
+        "TEDDY",
+        "YARA",
+        "ZE ROBERTO",
+        "LARISSA (REDES SOCIAIS)",
+        "LUCAS ABRAAO",
+        "MAURINHO",
+        "DAIANE FERREIRA",
+        "JAILSON DE ITAUBAL",
+        "Outros"
+      ],
+      "values": [
+        455,
+        158,
+        150,
+        125,
+        115,
+        109,
+        98,
+        92,
+        77,
+        55,
+        29,
+        28,
+        227
+      ]
+    },
+    "area": {
+      "labels": [
+        "AREA DE TERRA FIRME",
+        "AREA ALAGADA/RESSACA"
+      ],
+      "values": [
+        1334,
+        384
+      ]
+    },
+    "cadastrosDia": {
+      "labels": [
+        "2026-04-08",
+        "2026-04-09",
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12"
+      ],
+      "values": [
+        611,
+        349,
+        281,
+        222,
+        1
+      ]
+    },
+    "cadastrosHora": {
+      "labels": [
+        "00h",
+        "01h",
+        "02h",
+        "07h",
+        "08h",
+        "09h",
+        "10h",
+        "11h",
+        "12h",
+        "13h",
+        "14h",
+        "15h",
+        "16h",
+        "17h",
+        "18h",
+        "19h",
+        "20h",
+        "21h",
+        "22h",
+        "23h"
+      ],
+      "values": [
+        11,
+        5,
+        2,
+        1,
+        18,
+        101,
+        131,
+        143,
+        149,
+        118,
+        139,
+        121,
+        89,
+        80,
+        65,
+        65,
+        62,
+        58,
+        59,
+        47
+      ]
+    }
+  }
+}
