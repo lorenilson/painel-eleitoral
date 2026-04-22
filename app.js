@@ -224,7 +224,11 @@ function applyFilters() {
     .filter((m) => m.eleitores > 0)
     .sort((a, b) => b.eleitores - a.eleitores);
 
-  const totalEleitoresAbaMunicipio = scopedMunicipios.reduce((acc, m) => acc + Number(m.eleitores || 0), 0);
+  const compRows = (dashboardData.comparisonMunicipioPopulacao?.rows || []).filter((r) =>
+    municipio === 'TODOS' || r.municipio === municipio
+  );
+  const totalEleitoresAbaMunicipio = compRows.reduce((acc, r) => acc + Number(r.eleitores || 0), 0);
+  const totalPopulacaoAba = compRows.reduce((acc, r) => acc + Number(r.populacao || 0), 0);
 
   const totals = {
     eleitores: totalEleitoresAbaEleitores,
@@ -262,7 +266,6 @@ function applyFilters() {
   );
   upsertChart('generoChart', 'doughnut', generoDist.map((x) => x[0]), generoDist.map((x) => x[1]), 'multi');
 
-  // Mantidos gerais, pois o cubo dinamico atual cobre foco zona/faixa/municipio.
   upsertChart('racaChart', 'doughnut', dashboardData.charts.corRaca.labels, dashboardData.charts.corRaca.values, 'multi');
   upsertChart('instrucaoChart', 'bar', dashboardData.charts.instrucao.labels, dashboardData.charts.instrucao.values, colors.green2);
   upsertChart('estadoCivilChart', 'bar', dashboardData.charts.estadoCivil.labels, dashboardData.charts.estadoCivil.values, colors.red);
@@ -270,14 +273,18 @@ function applyFilters() {
   upsertChart(
     'comparativoAbasChart',
     'bar',
-    ['ELEITORES', 'ELEITORES POR MUNICIPIO'],
-    [totalEleitoresAbaEleitores, totalEleitoresAbaMunicipio],
+    ['ELEITORES POR MUNICIPIO', 'POPULACAO (IBGE 01/07/2025)'],
+    [totalEleitoresAbaMunicipio, totalPopulacaoAba],
     colors.yellow
   );
 
-  const diferenca = totalEleitoresAbaEleitores - totalEleitoresAbaMunicipio;
+  const diferenca = totalPopulacaoAba - totalEleitoresAbaMunicipio;
+  const taxa = totalPopulacaoAba > 0 ? (totalEleitoresAbaMunicipio / totalPopulacaoAba) * 100 : 0;
+  const origemA = dashboardData.source?.sheetNameCompareA || 'ELEITORES POR MUNICIPIO';
+  const origemB = dashboardData.source?.sheetNameCompareB || 'POPULACAO';
+  const origemPop = dashboardData.source?.populationSource || 'IBGE em 1 de julho de 2025';
   document.getElementById('comparativoMeta').textContent =
-    `Diferenca atual entre abas: ${n(diferenca)} eleitor(es).`;
+    `Fontes: aba ${origemA} x aba ${origemB}. ${origemPop}. Diferenca (Populacao - Eleitores): ${n(diferenca)}. Taxa de eleitorado: ${taxa.toFixed(2)}%.`;
 }
 
 function buildFilters() {
@@ -307,7 +314,7 @@ async function init() {
   const res = await fetch('./data/eleitores_summary.json');
   dashboardData = await ensureFilterCubes(await res.json());
 
-  document.getElementById('sourceInfo').textContent = `Fonte: Google Sheets (gid ${dashboardData.source.gid})`;
+  document.getElementById('sourceInfo').textContent = `Fonte: ${dashboardData.source.kind}`;
   document.getElementById('generatedAt').textContent = `Atualizado: ${new Date(dashboardData.generatedAt).toLocaleString('pt-BR')}`;
 
   buildFilters();
